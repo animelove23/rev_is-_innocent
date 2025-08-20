@@ -1,42 +1,14 @@
-#可以让替用户加减乘除的计算器 只能做单一运算
+#引入eval函数的计算器
 
 class count:
     def __init__(self):
-        self.quis=0
-        self.n=0
-    def run(self,*number):
-        self.quis=int(input("\nif you want to plus then press 1\nif you want to subtract then"
-        "press 3\nif you want to multiply then press 3\nif you want to divide then press 4 "
-        "\nwhat manner do you want to choose?"))
-        self.number = input("please input the number separate by spaces ").split()
-        self.number=list(map(int,self.number))
-        if self.quis==1:
-            for i in self.number:
-                self.n+=i
-        elif self.quis==2:
-            self.n = self.number[0]
-            for i in self.number[1:]:
-                self.n-=i
-        elif self.quis==3:
-            self.n = self.number[0]
-            for i in self.number[1:]:
-                self.n/=i
-        elif self.quis==4:
-            self.n = self.number[0]
-            for i in self.number[1:]:
-                self.n*=i
-        print(f'the result is {self.n}')
-
-
-
-
-
-
-
-
-
+        pass
+    def c(self):
+        a=input("please enter your arithmatic ")
+        b=eval(a)
+        print(b)
 
 
 if __name__ == '__main__':
-    user=count()
-    user.run()
+    co=count()
+    co.c()
